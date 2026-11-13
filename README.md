@@ -18,11 +18,11 @@ Los resultados son referenciales y dependen de los datos ingresados, de los par�
 
 ## Sobre este proyecto
 
-Este es mi primer proyecto frontend. Lo construí para aprender React, TypeScript y despliegue de producto mientras resolvía un problema concreto: entender una liquidación laboral sin tener que entregar datos personales a una plataforma.
+Este es mi primer proyecto frontend desarrollado con IA como copiloto. Nace de una problemática concreta: para entender una liquidación laboral, muchas personas terminan entregando datos sensibles —sueldo, fechas de ingreso y cese, régimen pensionario o situación familiar— a formularios, hojas de cálculo o servicios que no siempre explican qué hacen con esa información. CalculoLibrePeru busca que puedas informarte sin crear una cuenta ni dejar un historial de tus datos.
 
-Usé IA como copiloto, no como piloto automático. Yo definí el alcance, las reglas de negocio, la experiencia, los criterios de aceptación y las decisiones de privacidad. La IA aceleró el trabajo repetitivo: estructura inicial, componentes, tipados, pruebas y documentación. Cada cambio pasó por revisión de diff, verificación de tipos, lint, pruebas y revisión en el navegador.
+Usé IA como copiloto, no como piloto automático. Yo definí el alcance, las reglas de negocio, la experiencia, los criterios de aceptación y las decisiones de privacidad. La IA aceleró el trabajo repetitivo: estructura, componentes, validaciones, pruebas y documentación. Cada cambio pasó por revisión de diff, verificación de tipos, lint, pruebas y revisión en el navegador.
 
-Este proyecto también fue mi espacio para aprender a supervisar a la IA: dar contexto, dividir el trabajo en pasos pequeños, exigir pruebas y no aceptar código sin entenderlo.
+Este proyecto fue también un ejercicio de supervisión de IA: dar contexto, dividir el trabajo en pasos pequeños, exigir pruebas y no aceptar código sin entenderlo.
 
 ## Funcionalidades
 
@@ -81,7 +81,11 @@ La accesibilidad se revisa con pruebas automatizadas y revisión manual.
 | Calidad     | ESLint, Prettier, TypeScript                        |
 | Publicación | Integración continua y despliegue automático        |
 
-TypeScript permite tipar entradas y salidas y detectar errores antes de ejecutar. Los montos se calculan con precisión decimal para evitar errores de redondeo; las fechas se tratan con utilidades específicas para no mezclar zonas horarias.
+### ¿Por qué TypeScript?
+
+Elegí TypeScript porque el dominio tiene muchas reglas y contratos de datos que deben coincidir entre el formulario, la validación y el cálculo. El tipado permite detectar errores antes de ejecutar, documenta qué espera cada parte y facilita mantener las reglas cuando cambian. No es un cálculo trivial: hay fechas, montos, regímenes pensionarios y supuestos que se combinan, y TypeScript ayuda a que esos datos no se mezclen.
+
+TypeScript también aporta autocompletado y refactors más seguros, pero no reemplaza la precisión decimal. Los montos se calculan con precisión decimal para evitar errores de redondeo; las fechas se tratan con utilidades específicas para no mezclar zonas horarias.
 
 ## Calidad
 
@@ -132,27 +136,9 @@ El flujo fue deliberadamente humano:
 
 La IA no decidió las fórmulas, los parámetros legales ni las reglas de privacidad. Esas decisiones se revisaron a mano. Lo que sí aceleró fue el trabajo repetitivo: estructura, componentes, tipados, pruebas y documentación.
 
-## Aprendizajes
-
-- React se disfruta cuando los componentes tienen una responsabilidad clara.
-- TypeScript ayuda más cuando los tipos describen el dominio, no solo la forma de un objeto.
-- Los formularios complejos necesitan validación y mensajes pensados desde el inicio.
-- Las pruebas son lo que permite iterar rápido sin miedo a romper el cálculo.
-- La accesibilidad no se agrega al final; se diseña desde la estructura.
-- La privacidad también es una decisión de producto.
-- La IA acelera la escritura, pero no reemplaza el criterio.
-
 ## Limitaciones
 
 - Los resultados son referenciales y no constituyen una liquidación oficial.
 - Los parámetros legales pueden cambiar y requieren revisión periódica.
 - La herramienta no reemplaza la revisión de un profesional.
 - La cobertura de casos y la compatibilidad entre navegadores siguen mejorando.
-
-## Contacto
-
-Para consultas, correcciones o comentarios: [calculolegalperu@gmail.com](mailto:calculolegalperu@gmail.com).
-
----
-
-© 2026 CalculoLibrePeru. Todos los derechos reservados.
