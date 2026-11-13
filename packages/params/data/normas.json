@@ -1,0 +1,9 @@
+[
+  { "nombre": "SUNAFIL", "url": "https://www.gob.pe/sunafil" },
+  { "nombre": "MTPE", "url": "https://www.gob.pe/mtpe" },
+  { "nombre": "Calculadora oficial MTPE", "url": "https://portal.trabajo.gob.pe/calculadoraMTPE/" },
+  { "nombre": "SUNAT", "url": "https://www.sunat.gob.pe" },
+  { "nombre": "SBS", "url": "https://www.sbs.gob.pe" },
+  { "nombre": "El Peruano", "url": "https://elperuano.pe" },
+  { "nombre": "SPIJ", "url": "https://spij.minjus.gob.pe" }
+]

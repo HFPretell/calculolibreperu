@@ -1,0 +1,74 @@
+[
+  {
+    "concepto": "remuneracion_mes_cese",
+    "afectoPension": true,
+    "gravadoRenta5ta": true,
+    "estado": "confirmado",
+    "nota": "Criterio general.",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "cts_trunca",
+    "afectoPension": false,
+    "gravadoRenta5ta": false,
+    "estado": "confirmado",
+    "nota": "Criterio general.",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "gratificacion_trunca",
+    "afectoPension": false,
+    "gravadoRenta5ta": true,
+    "estado": "confirmado",
+    "nota": "Criterio general.",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "bonificacion_extraordinaria",
+    "afectoPension": false,
+    "gravadoRenta5ta": true,
+    "estado": "provisional",
+    "nota": "Confirmar con especialista (22.7).",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "vacaciones_truncas",
+    "afectoPension": true,
+    "gravadoRenta5ta": true,
+    "estado": "provisional",
+    "nota": "Confirmar con especialista (22.7).",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "vacaciones_no_gozadas",
+    "afectoPension": true,
+    "gravadoRenta5ta": true,
+    "estado": "provisional",
+    "nota": "Confirmar con especialista (22.7).",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "vacaciones_vencidas",
+    "afectoPension": true,
+    "gravadoRenta5ta": true,
+    "estado": "provisional",
+    "nota": "Confirmar con especialista (22.7).",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "indemnizacion_vacacional",
+    "afectoPension": false,
+    "gravadoRenta5ta": false,
+    "estado": "provisional",
+    "nota": "Confirmar con especialista (22.7).",
+    "revisadoEl": "2026-11-07"
+  },
+  {
+    "concepto": "indemnizacion_despido",
+    "afectoPension": false,
+    "gravadoRenta5ta": false,
+    "estado": "confirmado",
+    "nota": "Criterio general; una fuente discrepa (22.7).",
+    "revisadoEl": "2026-11-07"
+  }
+]

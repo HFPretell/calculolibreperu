@@ -1,0 +1,17 @@
+{
+  "aporteObligatorio": 0.1,
+  "primaSeguro": 0.0137,
+  "comisiones": [
+    { "afp": "Habitat", "flujo": 0.0147, "mixta": true },
+    { "afp": "Integra", "flujo": 0.0155, "mixta": true },
+    { "afp": "Prima", "flujo": 0.016, "mixta": true },
+    { "afp": "Profuturo", "flujo": 0.0169, "mixta": true }
+  ],
+  "rma": [
+    { "vigenteDesde": "2026-01-01", "vigenteHasta": "2026-03-31", "valor": 12209.11 },
+    { "vigenteDesde": "2026-04-01", "vigenteHasta": "2026-06-30", "valor": 12598.91 },
+    { "vigenteDesde": "2026-07-01", "vigenteHasta": "2026-09-30", "valor": 12672.65 },
+    { "vigenteDesde": "2026-10-01", "vigenteHasta": "2026-12-31", "valor": 12732.7 }
+  ],
+  "revisadoEl": "2026-11-07"
+}

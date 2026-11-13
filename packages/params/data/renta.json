@@ -1,0 +1,11 @@
+{
+  "deduccionUit": 7,
+  "tramos": [
+    { "hastaUit": 5, "tasa": 0.08 },
+    { "hastaUit": 20, "tasa": 0.14 },
+    { "hastaUit": 35, "tasa": 0.17 },
+    { "hastaUit": 45, "tasa": 0.2 },
+    { "hastaUit": null, "tasa": 0.3 }
+  ],
+  "revisadoEl": "2026-11-07"
+}

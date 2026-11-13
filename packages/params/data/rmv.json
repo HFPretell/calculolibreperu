@@ -1,0 +1,13 @@
+[
+  {
+    "nombre": "rmv",
+    "valor": 1230,
+    "moneda": "PEN",
+    "vigenteDesde": "2026-10-01",
+    "vigenteHasta": null,
+    "fuente": "D.S. N.º 015-2026-TR",
+    "url": "https://busquedas.elperuano.pe/",
+    "revisadoEl": "2026-11-07",
+    "nota": "Primer tramo del incremento de la RMV."
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "nombre": "uit",
+    "valor": 5500,
+    "moneda": "PEN",
+    "vigenteDesde": "2026-01-01",
+    "vigenteHasta": "2026-12-31",
+    "fuente": "D.S. N.º 301-2025-EF",
+    "url": "https://busquedas.elperuano.pe/",
+    "revisadoEl": "2026-11-07",
+    "nota": "Pendiente de confirmar en fuente primaria (22.7)."
+  }
+]
