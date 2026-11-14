@@ -56,7 +56,10 @@ describe('Hero', () => {
       </MemoryRouter>,
     )
 
-    expect(screen.getByRole('heading', { name: /Tu liquidación/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Calcula tu liquidación/i })).toBeInTheDocument()
+    expect(screen.getByText(/sin exponer tu sueldo/i)).toBeInTheDocument()
+    expect(screen.getByText(/tus datos no se guardan/i)).toBeInTheDocument()
+    expect(screen.getByText(/sin cuentas/i)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Calcular mi liquidación/i })).toHaveAttribute(
       'href',
       '/calculadora',

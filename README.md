@@ -24,6 +24,10 @@ Usé IA como copiloto, no como piloto automático. Yo definí el alcance, las re
 
 Este proyecto fue también un ejercicio de supervisión de IA: dar contexto, dividir el trabajo en pasos pequeños, exigir pruebas y no aceptar código sin entenderlo.
 
+También fue una gran oportunidad para usar GitHub Actions y entender cómo funciona el CI/CD. Al principio pensé en Jenkins, porque es una herramienta muy conocida, pero luego entendí que para un proyecto pequeño y alojado en GitHub no era la mejor opción: implicaba mantener un servidor y una configuración adicional para algo que GitHub Actions ya resolvía de forma integrada. Cada cambio que subo pasa por una revisión automática y, si algo falla, no se publica. Esa experiencia me ayudó a entender el CI/CD desde la práctica y a valorar la automatización como una red de seguridad.
+
+La seguridad también fue una prioridad desde el inicio. Tomé el OWASP Top 10 como referencia para revisar los riesgos más comunes y decidir qué controles tenían sentido para este proyecto.
+
 ## Funcionalidades
 
 - Formulario guiado en cuatro pasos.
@@ -41,6 +45,7 @@ Este proyecto fue también un ejercicio de supervisión de IA: dar contexto, div
 
 - **Claridad antes que decoración.** La interfaz prioriza entender el cálculo, no impresionar.
 - **Privacidad desde el diseño.** La información se usa para calcular y no se conserva.
+- **Seguridad por defecto.** Menos datos, menos superficie de exposición y verificaciones antes de publicar.
 - **Accesibilidad como parte del producto.** Contraste, foco, teclado y respeto a las preferencias de movimiento.
 - **Consistencia visual.** Un sistema de componentes, espaciado y tipografía mantenido en toda la experiencia.
 - **Rendimiento percibido.** La calculadora se carga cuando se necesita y el sitio evita distracciones innecesarias.
@@ -56,6 +61,21 @@ La información que ingresas se usa solo para generar la estimación y no se con
 - En entornos compartidos, cierra la pestaña al terminar para evitar que la información quede visible en pantalla.
 
 El cálculo se resuelve en tu dispositivo. Los datos del formulario no se guardan al cerrar o recargar la página.
+
+## Seguridad
+
+La seguridad se trabajó desde el diseño, no como un añadido. Tomé el OWASP Top 10 como referencia para revisar los riesgos más comunes y decidir qué controles tenían sentido para este proyecto.
+
+- Solo se piden los datos necesarios y no se conserva el formulario.
+- Las entradas se validan y tienen límites para evitar datos malformados.
+- No hay cuentas, historial ni perfiles que puedan filtrarse.
+- No se usan anuncios, rastreadores ni scripts de terceros.
+- Se usa HTTPS y configuraciones de seguridad que reducen riesgos como la inyección de código o el secuestro de clics.
+- Las dependencias se revisan y se evitan paquetes innecesarios; las credenciales no viven en el repositorio.
+- Las pruebas de privacidad verifican que el sueldo no se envía por la red.
+- El despliegue automático se detiene si falla una verificación.
+
+No es una certificación ni una auditoría formal: es una guía para tomar mejores decisiones y seguir mejorando.
 
 ## Accesibilidad
 
@@ -79,7 +99,7 @@ La accesibilidad se revisa con pruebas automatizadas y revisión manual.
 | Cálculo     | TypeScript y precisión decimal                      |
 | Pruebas     | Vitest, Playwright, axe                             |
 | Calidad     | ESLint, Prettier, TypeScript                        |
-| Publicación | Integración continua y despliegue automático        |
+| Publicación | GitHub Actions, CI/CD y despliegue automático       |
 
 ### ¿Por qué TypeScript?
 
@@ -96,6 +116,7 @@ El proyecto combina varias capas de verificación:
 - pruebas de flujo completo en navegador;
 - pruebas de accesibilidad automatizadas;
 - revisión manual en escritorio y móvil;
+- revisión de dependencias y configuración de seguridad antes de publicar;
 - verificación de tipos, lint y build antes de publicar.
 
 ## Desarrollo local
@@ -131,7 +152,7 @@ El flujo fue deliberadamente humano:
 2. Escribir criterios de aceptación verificables.
 3. Trabajar en incrementos pequeños y revisar cada diff.
 4. Exigir tipos, lint, pruebas y build antes de dar un cambio por terminado.
-5. Revisar manualmente fórmulas, textos legales, accesibilidad y privacidad.
+5. Revisar manualmente fórmulas, textos legales, accesibilidad, privacidad y seguridad.
 6. Probar el resultado en el navegador, no solo en la terminal.
 
 La IA no decidió las fórmulas, los parámetros legales ni las reglas de privacidad. Esas decisiones se revisaron a mano. Lo que sí aceleró fue el trabajo repetitivo: estructura, componentes, tipados, pruebas y documentación.

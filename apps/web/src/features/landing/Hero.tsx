@@ -12,11 +12,11 @@ export function Hero() {
             Liquidación laboral · Perú
           </p>
           <h1 className="mt-5 max-w-2xl text-balance text-4xl font-semibold tracking-[-0.045em] text-ink sm:text-5xl lg:text-6xl">
-            Tu liquidación, <span className="text-muted">clara y al instante.</span>
+            Calcula tu liquidación <span className="text-muted">sin exponer tu sueldo.</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            CTS, gratificación, vacaciones, indemnización y descuentos. Una estimación con el
-            detalle de cada cifra.
+            CTS, gratificación, vacaciones, indemnización y descuentos. El detalle de cada cifra,
+            con la tranquilidad de que tus datos no se guardan.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
             <ButtonLink
@@ -39,7 +39,7 @@ export function Hero() {
             </Link>
           </div>
           <p className="mt-8 border-t border-line pt-5 text-xs text-faint">
-            Cálculo referencial · Detalle por concepto · Fuentes oficiales
+            Cálculo referencial · Sin cuentas · Sin historial · Fuentes oficiales
           </p>
         </div>
         <HeroPreview />
